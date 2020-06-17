@@ -107,6 +107,11 @@ require get_template_directory() . '/inc/classes/ISSO_Walker.php';
 require get_template_directory() . '/inc/classes/ISSO_Walker_Mini.php';
 
 function isso_register_styles() {
+
+	if(is_home(  )){
+		wp_enqueue_style( 'isso-slider', get_template_directory_uri( ) . '/dist/slider.css' );
+	}
+
 	wp_enqueue_style( 'isso-style', get_template_directory_uri( ) . '/dist/bundle.css' );
 	wp_enqueue_style( 'isso-fonts','https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@400;500;600;700&display=swap' );
 }
@@ -121,8 +126,9 @@ function isso_register_scripts() {
 	if ( ( ! is_admin() ) && is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
+	
 	wp_enqueue_script( 'isso-js', get_template_directory_uri() . '/dist/bundle.js', array(), null, true );
+	wp_enqueue_script( 'isso-icons', 'https://kit.fontawesome.com/aec5bcb84e.js?ver=5.4.1' );
 	wp_script_add_data( 'isso-js', 'async', true );
 
 }

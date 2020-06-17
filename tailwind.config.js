@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       gradients: theme => ({
         'primary-lite': [theme('colors.primary'),theme('colors.primary-lite')],
-        'primary-lite-h': [theme('colors.primary'),theme('colors.primary')]
+        'primary-lite-h': [theme('colors.primary'),theme('colors.primary')],
+        'hero-cover': ['#ffffffad','#ffffff00']
       }),
       fontFamily:{
         'quicksand' : ['Quicksand', 'sans-serif'],

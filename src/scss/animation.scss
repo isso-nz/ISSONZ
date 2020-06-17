@@ -1,3 +1,5 @@
+@import './sass/aos.scss';
+
 @keyframes fade-in {
     0% {
       opacity: 0;
@@ -55,4 +57,35 @@
 
 .fade-in-top {
 	  animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-bottom {
+	animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@keyframes fade-out-bottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.fade-out-bottom {
+	animation: fade-out-bottom 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
