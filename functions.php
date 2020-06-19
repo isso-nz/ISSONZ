@@ -18,11 +18,11 @@ function isso_theme_support() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	// Set post thumbnail size.
-	// set_post_thumbnail_size( 1200, 9999 );
+	//Set post thumbnail size.
+	//set_post_thumbnail_size( 1200, 9999 );
 
-	// Add custom image size used in Cover Template.
-	// add_image_size( 'isso-fullscreen', 1980, 9999 );
+	 add_image_size( 'isso-event-home', 420, 310 );
+	 add_image_size( 'isso-page-home', 1500, 310 );
 
 	// Custom logo.
 	// $logo_width  = 120;
@@ -94,7 +94,7 @@ function isso_menus() {
 		'primary'  => __( 'Desktop Horizontal Menu', 'isso' ),
 		// 'expanded' => __( 'Desktop Expanded Menu', 'isso' ),
 		// 'mobile'   => __( 'Mobile Menu', 'isso' ),
-		// 'footer'   => __( 'Footer Menu', 'isso' ),
+		 'footer'   => __( 'Footer Menu', 'isso' ),
 		// 'social'   => __( 'Social Menu', 'isso' ),
 	);
 
@@ -134,3 +134,18 @@ function isso_register_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'isso_register_scripts' );
+
+
+if (!function_exists('dd')) {
+    function dd($data)
+    {
+        ini_set("highlight.comment", "#969896; font-style: italic");
+        ini_set("highlight.default", "#FFFFFF");
+        ini_set("highlight.html", "#D16568");
+        ini_set("highlight.keyword", "#7FA3BC; font-weight: bold");
+        ini_set("highlight.string", "#F2C47E");
+        $output = highlight_string("<?php\n\n" . var_export($data, true), true);
+        echo "<div style=\"background-color: #1C1E21; padding: 1rem\">{$output}</div>";
+        die();
+    }
+}

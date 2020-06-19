@@ -1,4 +1,4 @@
-<div class="flex-auto justify-center my-8 flex lg:justify-start fade-in-top">
+<div class="flex-auto justify-center my-8 flex lg:justify-start ">
     <a href="<?php echo get_home_url() ?>">
         <img class="h-16 sm:h-20 mx-4 sm:mx-8" src="<?php echo get_template_directory_uri( ); ?>/src/svg/logo.svg" alt="ISSO LOGO" srcset="">
     </a>

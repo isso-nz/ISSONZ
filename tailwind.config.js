@@ -11,7 +11,8 @@ module.exports = {
       gradients: theme => ({
         'primary-lite': [theme('colors.primary'),theme('colors.primary-lite')],
         'primary-lite-h': [theme('colors.primary'),theme('colors.primary')],
-        'hero-cover': ['#ffffffad','#ffffff00']
+        'hero-cover': ['#ffffffad','#ffffff00'],
+        'page-cover': ['#ffffff','#ffffff00']
       }),
       fontFamily:{
         'quicksand' : ['Quicksand', 'sans-serif'],
