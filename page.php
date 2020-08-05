@@ -11,7 +11,7 @@ the_post();
         <h1 class=" text-3xl md:text-4xl lg:text-5xl font-medium"><?php the_title(); ?></h1>
         <?php
             if ( function_exists('yoast_breadcrumb') ) {
-                yoast_breadcrumb( '<p class="font-medium" id="breadcrumbs">','</p>' );
+                yoast_breadcrumb( '<p class="font-medium hidden md:block" id="breadcrumbs">','</p>' );
             }
             ?>
     </div>
