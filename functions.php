@@ -93,7 +93,7 @@ function isso_menus() {
 	$locations = array(
 		'primary'  => __( 'Desktop Horizontal Menu', 'isso' ),
 		// 'expanded' => __( 'Desktop Expanded Menu', 'isso' ),
-		// 'mobile'   => __( 'Mobile Menu', 'isso' ),
+		'mobile'   => __( 'Mobile Menu', 'isso' ),
 		 'footer'   => __( 'Footer Menu', 'isso' ),
 		// 'social'   => __( 'Social Menu', 'isso' ),
 	);

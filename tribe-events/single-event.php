@@ -28,8 +28,8 @@ if( ! $hasOrganizer) {
     </div>
 </div>
 
-<div class="grid grid-cols-<?php echo $count; ?> w-11/12 m-auto gap-4">
-    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true" class="shadow sm:shadow-md md:shadow-lg lg:shadow-xl bg-primary p-6 text-secondaray">
+<div class="block md:grid grid-cols-<?php echo $count; ?> w-11/12 m-auto gap-4">
+    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true" class=" shadow sm:shadow-md md:shadow-lg lg:shadow-xl bg-primary p-6 text-secondaray">
         <i class="fas fa-calendar-day text-3xl "></i>
         <?php echo tribe_events_event_schedule_details( $event_id, '<h2 class="text-xl">', '</h2>' ); ?>
     </div>
@@ -39,7 +39,7 @@ if( ! $hasOrganizer) {
         if (  tribe_get_venue_id() ) {
             ?>
 
-                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-once="true" class="shadow sm:shadow-md md:shadow-lg lg:shadow-xl bg-primary p-6 text-secondaray">
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-once="true" class="mt-4 md:mt-0 shadow sm:shadow-md md:shadow-lg lg:shadow-xl bg-primary p-6 text-secondaray">
                         <i class="fas fa-map-marked-alt text-3xl"></i>
                         <h2 class="text-xl"><?php echo tribe_get_full_address(); ?></h2>
                     </div>
@@ -55,7 +55,7 @@ if( ! $hasOrganizer) {
         if (  $hasOrganizer ) {
             ?>
 
-                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" data-aos-once="true" class="shadow sm:shadow-md md:shadow-lg lg:shadow-xl bg-primary p-6 text-secondaray">
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" data-aos-once="true" class="mt-4 md:mt-0 shadow sm:shadow-md md:shadow-lg lg:shadow-xl bg-primary p-6 text-secondaray">
                         <i class="fas fa-user-cog text-3xl"></i>
                         <h2 class="text-xl"><?php echo tribe_get_organizer(); ?></h2>
                     </div>

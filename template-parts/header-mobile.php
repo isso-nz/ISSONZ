@@ -9,17 +9,21 @@
                 <a class="flex justify-center" href="<?php echo get_home_url() ?>">
                     <img class="h-20 " src="<?php echo get_template_directory_uri( ); ?>/src/svg/logo.svg" alt="ISSO LOGO" srcset="">
                 </a>
-                <?php 
-                wp_nav_menu(
-                    array(
-                        'container'  => 'div',
-                        'items_wrap' => '%3$s',
-                        'container_class' => 'list-none p-8',
-                        'theme_location' => 'primary',
-                        'walker' => new ISSO_Walker_Mini()
-                    )
-                );
-            ?>
+                <div  class="height-60-screen overflow-y-auto w-11/12 m-auto">
+        <?php 
+            wp_nav_menu(
+                array(
+                    'items_wrap' => '%3$s',
+                    'link_before' => '<h1 class="hover:text-primary transition ease-in-out duration-200 m-4">',
+                    'link_after' => '</h1 >',
+                    'menu_class' => 'list-none text-center flex flex-col justify-between items-center w-full text-white text-lg uppercase font-normal',
+                    'theme_location' => 'mobile',
+                    'container_id' => 'mobile-menu-list',
+                )
+            );
+            
+        ?>
+    </div>
         </div>
     </div>
 </div>
