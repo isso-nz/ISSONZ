@@ -16,7 +16,7 @@
                     'items_wrap' => '%3$s',
                     'link_before' => '<h1 class="hover:text-primary transition ease-in-out duration-200 m-4">',
                     'link_after' => '</h1 >',
-                    'menu_class' => 'list-none text-center flex flex-col justify-between items-center w-full text-white text-lg uppercase font-normal',
+                    'container_class' => 'list-none text-center flex flex-col justify-between items-center w-full text-white text-lg uppercase font-normal',
                     'theme_location' => 'mobile',
                     'container_id' => 'mobile-menu-list',
                 )
